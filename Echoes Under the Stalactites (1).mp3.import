@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://beqbkv8p4uayx"
+path="res://.godot/imported/Echoes Under the Stalactites (1).mp3-1ab5cd379e009259f5f91cc5d4523477.mp3str"
+
+[deps]
+
+source_file="res://Echoes Under the Stalactites (1).mp3"
+dest_files=["res://.godot/imported/Echoes Under the Stalactites (1).mp3-1ab5cd379e009259f5f91cc5d4523477.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0.0
+bpm=0.0
+beat_count=0
+bar_beats=4

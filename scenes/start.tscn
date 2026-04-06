@@ -1,0 +1,370 @@
+[gd_scene load_steps=24 format=3 uid="uid://b6i71gggy1bhk"]
+
+[ext_resource type="Script" uid="uid://b8ifpau3l51jx" path="res://scenes/start.gd" id="1_bodal"]
+[ext_resource type="FontFile" uid="uid://nofh18s4x7r7" path="res://Pixel_gothic_font_from_osadam/Gothic_pixel_font(0S).ttf" id="1_jaeev"]
+[ext_resource type="Script" uid="uid://tthi6mnxsnmo" path="res://scripts/text_animation.gd" id="2_u80x2"]
+[ext_resource type="Script" uid="uid://doq85ya8hqrds" path="res://scripts/text_animation_2.gd" id="4_kdmts"]
+[ext_resource type="Script" uid="uid://d36rc3y4p1xvb" path="res://scripts/text_animation_3.gd" id="5_0auqf"]
+[ext_resource type="Script" uid="uid://frbccraihj0n" path="res://scripts/text_animation_4.gd" id="6_y16t7"]
+[ext_resource type="Script" uid="uid://dievtci78850l" path="res://scripts/text_animation_5.gd" id="7_4ge6i"]
+[ext_resource type="AudioStream" uid="uid://duvi35d7dqn2h" path="res://Echoes Under the Stalactites.mp3" id="8_8itgj"]
+
+[sub_resource type="Animation" id="Animation_kdmts"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../scene text3:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../scene text4:visible_ratio")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../scene text5:visible_ratio")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_u80x2"]
+resource_name = "new_animation2"
+
+[sub_resource type="Animation" id="Animation_bodal"]
+resource_name = "text animation"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("scene text1:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.96667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_8itgj"]
+resource_name = "text animation_3"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../scene text3:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_tn317"]
+resource_name = "text animation_4"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../scene text4:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_m8nf6"]
+resource_name = "text animation_5"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../scene text5:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 3),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_0auqf"]
+_data = {
+&"RESET": SubResource("Animation_kdmts"),
+&"new_animation2": SubResource("Animation_u80x2"),
+&"text animation": SubResource("Animation_bodal"),
+&"text animation_3": SubResource("Animation_8itgj"),
+&"text animation_4": SubResource("Animation_tn317"),
+&"text animation_5": SubResource("Animation_m8nf6")
+}
+
+[sub_resource type="Animation" id="Animation_y16t7"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.0]
+}
+
+[sub_resource type="Animation" id="Animation_0auqf"]
+resource_name = "new_animation"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.96667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="Animation" id="Animation_4ge6i"]
+resource_name = "new_animation_2"
+length = 3.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:visible_ratio")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 2.96667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [0.0, 1.0]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4ge6i"]
+_data = {
+&"RESET": SubResource("Animation_y16t7"),
+&"new_animation": SubResource("Animation_0auqf"),
+&"new_animation_2": SubResource("Animation_4ge6i")
+}
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_4ge6i"]
+
+[sub_resource type="Gradient" id="Gradient_8itgj"]
+offsets = PackedFloat32Array(0.210526, 0.45614)
+colors = PackedColorArray(0.733005, 0.733005, 0.733005, 1, 0, 0, 0, 0)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_tn317"]
+gradient = SubResource("Gradient_8itgj")
+width = 30
+height = 30
+fill = 1
+fill_from = Vector2(0.506173, 0.490741)
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_m8nf6"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(800, 50, 100)
+angle_min = 1.07288e-05
+angle_max = 457.7
+inherit_velocity_ratio = -0.304
+velocity_pivot = Vector3(50, 50, 0)
+direction = Vector3(1, -1, 0)
+spread = 150.492
+gravity = Vector3(0, -20, 0)
+scale_min = 0.5
+scale_max = 1.5
+turbulence_noise_strength = 11.87
+
+[node name="cutscene" type="Node2D"]
+script = ExtResource("1_bodal")
+
+[node name="background" type="ColorRect" parent="."]
+offset_right = 1155.0
+offset_bottom = 666.0
+color = Color(0, 0, 0, 1)
+
+[node name="scene text1" type="RichTextLabel" parent="."]
+texture_filter = 1
+offset_left = 355.0
+offset_top = 284.0
+offset_right = 798.0
+offset_bottom = 370.0
+theme_override_fonts/normal_font = ExtResource("1_jaeev")
+theme_override_font_sizes/italics_font_size = 5
+theme_override_font_sizes/mono_font_size = 4
+theme_override_font_sizes/normal_font_size = 22
+theme_override_font_sizes/bold_font_size = 2
+text = "They be not forgotten. "
+fit_content = true
+visible_characters = 0
+visible_characters_behavior = 1
+visible_ratio = 0.0
+
+[node name="text animation" type="AnimationPlayer" parent="."]
+libraries = {
+&"": SubResource("AnimationLibrary_0auqf")
+}
+script = ExtResource("2_u80x2")
+
+[node name="scene text2" type="RichTextLabel" parent="."]
+texture_filter = 1
+offset_left = 284.0
+offset_top = 281.0
+offset_right = 837.0
+offset_bottom = 357.0
+theme_override_fonts/normal_font = ExtResource("1_jaeev")
+theme_override_font_sizes/bold_italics_font_size = 7
+theme_override_font_sizes/italics_font_size = 5
+theme_override_font_sizes/mono_font_size = 4
+theme_override_font_sizes/normal_font_size = 22
+theme_override_font_sizes/bold_font_size = 2
+text = " They abide within thy mind."
+fit_content = true
+visible_characters = 0
+visible_characters_behavior = 1
+visible_ratio = 0.0
+
+[node name="text animation 2" type="AnimationPlayer" parent="scene text2"]
+libraries = {
+&"": SubResource("AnimationLibrary_4ge6i")
+}
+script = ExtResource("4_kdmts")
+
+[node name="scene text3" type="RichTextLabel" parent="."]
+texture_filter = 1
+offset_left = 307.0
+offset_top = 289.0
+offset_right = 1174.0
+offset_bottom = 424.0
+theme_override_fonts/normal_font = ExtResource("1_jaeev")
+theme_override_font_sizes/bold_italics_font_size = 7
+theme_override_font_sizes/italics_font_size = 5
+theme_override_font_sizes/mono_font_size = 4
+theme_override_font_sizes/normal_font_size = 22
+theme_override_font_sizes/bold_font_size = 2
+text = " Ne’er shall they fade anon. "
+fit_content = true
+visible_characters = 0
+visible_characters_behavior = 1
+visible_ratio = 0.0
+
+[node name="text animation3" type="AnimationPlayer" parent="scene text3"]
+root_node = NodePath("../../text animation")
+libraries = {
+&"": SubResource("AnimationLibrary_0auqf")
+}
+script = ExtResource("5_0auqf")
+
+[node name="scene text4" type="RichTextLabel" parent="."]
+texture_filter = 1
+offset_left = 179.0
+offset_top = 283.0
+offset_right = 1060.0
+offset_bottom = 389.0
+theme_override_fonts/normal_font = ExtResource("1_jaeev")
+theme_override_font_sizes/bold_italics_font_size = 7
+theme_override_font_sizes/italics_font_size = 5
+theme_override_font_sizes/mono_font_size = 4
+theme_override_font_sizes/normal_font_size = 22
+theme_override_font_sizes/bold_font_size = 2
+text = "Keepeth them close, for they be thine own."
+fit_content = true
+visible_characters = 0
+visible_characters_behavior = 1
+visible_ratio = 0.0
+
+[node name="text animation4" type="AnimationPlayer" parent="scene text4"]
+root_node = NodePath("../../text animation")
+libraries = {
+&"": SubResource("AnimationLibrary_0auqf")
+}
+script = ExtResource("6_y16t7")
+
+[node name="scene text5" type="RichTextLabel" parent="."]
+texture_filter = 1
+offset_left = 176.0
+offset_top = 287.0
+offset_right = 981.0
+offset_bottom = 363.0
+theme_override_fonts/normal_font = ExtResource("1_jaeev")
+theme_override_font_sizes/bold_italics_font_size = 7
+theme_override_font_sizes/italics_font_size = 5
+theme_override_font_sizes/mono_font_size = 4
+theme_override_font_sizes/normal_font_size = 22
+theme_override_font_sizes/bold_font_size = 2
+text = "Thou shalt remember, now and evermore."
+fit_content = true
+visible_characters = 0
+visible_characters_behavior = 1
+visible_ratio = 0.0
+
+[node name="text animation5" type="AnimationPlayer" parent="scene text5"]
+root_node = NodePath("../../text animation")
+libraries = {
+&"": SubResource("AnimationLibrary_0auqf")
+}
+script = ExtResource("7_4ge6i")
+
+[node name="particle" type="GPUParticles2D" parent="."]
+material = SubResource("CanvasItemMaterial_4ge6i")
+position = Vector2(570, 641)
+amount_ratio = 0.4452
+texture = SubResource("GradientTexture2D_tn317")
+lifetime = 2.0
+process_material = SubResource("ParticleProcessMaterial_m8nf6")
+
+[node name="smoke" type="GPUParticles2D" parent="."]
+material = SubResource("CanvasItemMaterial_4ge6i")
+position = Vector2(584, 328)
+amount = 10
+amount_ratio = 0.1247
+texture = SubResource("GradientTexture2D_tn317")
+lifetime = 2.0
+process_material = SubResource("ParticleProcessMaterial_m8nf6")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_8itgj")
+autoplay = true
+
+[node name="Timer" type="Timer" parent="."]
+
+[node name="Timer2" type="Timer" parent="."]
+
+[connection signal="animation_finished" from="text animation" to="scene text2/text animation 2" method="_on_text_animation_animation_finished"]
+[connection signal="animation_finished" from="scene text2/text animation 2" to="scene text3/text animation3" method="_on_text_animation_2_animation_finished"]
+[connection signal="animation_finished" from="scene text3/text animation3" to="scene text4/text animation4" method="_on_text_animation_3_animation_finished"]
+[connection signal="animation_finished" from="scene text4/text animation4" to="scene text5/text animation5" method="_on_text_animation_4_animation_finished"]
+[connection signal="animation_finished" from="scene text5/text animation5" to="." method="_on_text_animation_5_animation_finished"]
+[connection signal="timeout" from="Timer2" to="scene text2/text animation 2" method="_on_timer_2_timeout"]

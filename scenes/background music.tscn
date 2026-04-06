@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bcv4id57wb4xt"]
+
+[ext_resource type="AudioStream" uid="uid://beqbkv8p4uayx" path="res://Echoes Under the Stalactites (1).mp3" id="1_tyy6d"]
+[ext_resource type="Script" uid="uid://camr1162mfuax" path="res://scenes/background_music.gd" id="2_76ywh"]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D"]
+stream = ExtResource("1_tyy6d")
+autoplay = true
+script = ExtResource("2_76ywh")

@@ -1,0 +1,96 @@
+[gd_scene load_steps=8 format=3 uid="uid://bxpgn3otu106r"]
+
+[ext_resource type="FontFile" uid="uid://nofh18s4x7r7" path="res://Pixel_gothic_font_from_osadam/Gothic_pixel_font(0S).ttf" id="1_l6cm7"]
+[ext_resource type="Script" uid="uid://cojvr0vgm3cwm" path="res://scenes/button.gd" id="2_bqqt6"]
+[ext_resource type="Texture2D" uid="uid://ck2d6ahf575gs" path="res://image-removebg-preview (3).png" id="2_ekxnf"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l6cm7"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wu84c"]
+bg_color = Color(0.862745, 0.498039, 0, 1)
+border_width_bottom = 12
+border_color = Color(0.827451, 0.572549, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ekxnf"]
+bg_color = Color(0.864622, 0.496141, 7.70092e-07, 1)
+border_width_bottom = 12
+border_color = Color(0.828325, 0.572371, 1.73271e-06, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bqqt6"]
+bg_color = Color(0.790811, 0.459654, 0.13606, 1)
+border_width_bottom = 14
+border_color = Color(0.943852, 0.60341, 0, 1)
+
+[node name="main menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 0
+offset_right = 1151.0
+offset_bottom = 649.0
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 0
+offset_right = 1154.0
+offset_bottom = 655.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_l6cm7")
+
+[node name="Button" type="Button" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.5
+anchor_top = 0.623
+anchor_right = 0.5
+anchor_bottom = 0.623
+offset_left = -213.5
+offset_top = -7.20401
+offset_right = 213.5
+offset_bottom = 103.796
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("1_l6cm7")
+theme_override_font_sizes/font_size = 26
+theme_override_styles/hover = SubResource("StyleBoxFlat_wu84c")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ekxnf")
+theme_override_styles/normal = SubResource("StyleBoxFlat_bqqt6")
+text = "start game"
+script = ExtResource("2_bqqt6")
+
+[node name="main label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.477
+anchor_top = 0.352
+anchor_right = 0.477
+anchor_bottom = 0.352
+offset_left = -198.504
+offset_top = -97.096
+offset_right = 236.496
+offset_bottom = 40.904
+theme_override_fonts/font = ExtResource("1_l6cm7")
+theme_override_font_sizes/font_size = 58
+text = "Historia"
+
+[node name="sub label" type="Label" parent="."]
+layout_mode = 0
+offset_left = 543.0
+offset_top = 274.0
+offset_right = 873.0
+offset_bottom = 338.0
+theme_override_fonts/font = ExtResource("1_l6cm7")
+theme_override_font_sizes/font_size = 20
+text = "The lost memories"
+
+[node name="Image-removebg-preview(3)" type="Sprite2D" parent="."]
+position = Vector2(497, 338)
+scale = Vector2(1.88571, 1.75676)
+texture = ExtResource("2_ekxnf")
+
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
